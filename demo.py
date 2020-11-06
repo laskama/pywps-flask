@@ -36,7 +36,7 @@ from processes.buffer import Buffer
 from processes.area import Area
 from processes.bboxinout import Box
 from processes.jsonprocess import TestJson
-
+from processes.whizps_process import WhizPSprocess
 
 app = flask.Flask(__name__)
 
@@ -45,6 +45,7 @@ processes = [
     SayHello(),
     Centroids(),
     UltimateQuestion(),
+    WhizPSprocess(),
     Sleep(),
     Buffer(),
     Area(),
@@ -107,6 +108,8 @@ def staticfile(filename):
 
 if __name__ == "__main__":
     import argparse
+
+
 
     parser = argparse.ArgumentParser(
         description="""Script for starting an example PyWPS

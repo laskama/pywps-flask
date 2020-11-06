@@ -30,7 +30,7 @@ with open('VERSION.txt') as ff:
 
 with open('requirements.txt') as f:
     INSTALL_REQUIRES = f.read().splitlines()[:-1]
-    INSTALL_REQUIRES.append('pywps=='+VERSION)
+    #INSTALL_REQUIRES.append('pywps=='+VERSION)
 
 DESCRIPTION = (
 '''PyWPS is an implementation of the Web Processing Service standard from the
@@ -66,9 +66,6 @@ config = {
     ],
     'version': VERSION,
     'install_requires': INSTALL_REQUIRES,
-    'dependency_links': [
-        'git+https://github.com/geopython/pywps.git@pywps-'+VERSION+'#egg=pywps-'+VERSION
-     ],
     'packages': ['processes', 'tests'],
     'scripts': ['demo.py'],
     'name': 'pywps-flask'

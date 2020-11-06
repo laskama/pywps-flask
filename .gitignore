@@ -8,6 +8,7 @@ logs/*
 .DS_Store
 .*.un~
 .idea
+venv/
 
 # python setup.py build/install artifacts
 build

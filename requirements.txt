@@ -9,4 +9,5 @@ Shapely
 Werkzeug
 SQLAlchemy
 psutil
-pywps
+pywps @ git+https://github.com/laskama/pywps.git@whizps#egg=pywps
+py_rpc_producer @ git+https://git.rwth-aachen.de/marius.laska/py-rpc-producer.git
